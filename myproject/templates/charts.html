@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Datos de Reuniones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .grafico-container {
+            border-bottom: 2px solid #ddd; /* Línea separadora entre gráficos */
+            padding-bottom: 20px; /* Espacio debajo de la línea */
+            margin-bottom: 20px; /* Espacio entre la línea y el siguiente gráfico */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        footer img {
+            height: 20px; /* Ajusta el tamaño de la imagen si es necesario */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gráficos de Datos de Reuniones</h1>
+    </header>
+    <main class="container mt-5">
+        <div class="btn-group mb-3" role="group" aria-label="Navegación">
+            <a href="/" class="btn btn-primary">Ver Tabla</a>
+            <a href="/charts" class="btn btn-secondary">Ver Gráficos</a>
+        </div>
+        <div class="grafico-container">
+            <h3>Distribución por Estado</h3>
+            {{ graph1 | safe }}
+        </div>
+        <div class="grafico-container">
+            <h3>Conteo de Eventos por Fecha y Estado</h3>
+            {{ graph3 | safe }}
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <img src="https://www.bemost.cl/wp-content/uploads/2019/05/logo_bemost.png" alt="Logo Bemost"></p>
+    </footer>
+</body>
+</html>

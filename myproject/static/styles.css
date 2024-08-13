@@ -1,0 +1,69 @@
+/* styles.css */
+
+/* Estilos básicos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0E4C92; /* Azul */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para tablas */
+.table th, .table td {
+    text-align: center;  /* Centra el contenido de las celdas */
+}
+
+.table th {
+    background-color: #f8f9fa; /* Color de fondo para encabezados */
+}
+
+.table thead th {
+    font-weight: bold;  /* Negrita para los encabezados */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos pequeños */
+}
+
+.container {
+    max-width: 90%; /* Hace que el contenedor se expanda al máximo ancho disponible */
+}
+
+footer {
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+}
